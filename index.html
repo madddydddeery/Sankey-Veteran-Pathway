@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Service Funding & Provision Pathways — Sankey</title>
+  <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+  <script src="https://cdn.plot.ly/plotly-2.4.1.min.js"></script>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background: #ffffff; }
+    #chart { width: 100%; height: 980px; }
+  
+    .hint {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      z-index: 10;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 12px;
+      line-height: 1.3;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      user-select: none;
+    }
+    .chart-wrap { position: relative; }
+</style>
+</head>
+<body>
+  <div class="chart-wrap">
+    <div class="hint"><b>Highlight pathways</b><br>
+      Hover a node to preview connected pathways.<br>
+      Click a node to lock (click again to clear).<br>
+      Press <b>Esc</b> to reset.
+    </div>
+    <div id="dec12e2c-3ed0-49c0-89fc-9723f6ae46c1" class="plotly-graph-div" style="height:980px; width:100%;"></div>
+  </div>
+  <script type="text/javascript">
+    const data = [{"type": "sankey", "arrangement": "snap", "node": {"pad": 15, "thickness": 20, "line": {"color": "rgba(0,0,0,0.6)", "width": 0.7}, "label": ["Commonwealth Government", "State and Territory Governments", "Private, Non-for-Profit, and Community Sectors", "Indigenous Australians Health Programme", "Medicare Benefits Scheme", "Department of Health, Disability, and Ageing", "Primary Health Networks", "State and Territory Department of Health", "Department of Defense", "Community Donations and Philanthropy", "Consumer Out-of-Pocket", "Department of Veteran Affairs", "Local Hospital Networks", "National Disability Insurance Agency", "Department of Infrastructure, Transport, Regional Development, Communications and the Arts", "State and Territory Emergency Services", "Private Insurers", "Attorney General\u2019s Department", "State and Territory Department of Justice", "Pharmaceutical Benefits Scheme", "Department of Social Services", "Government Grants and Contracts", "Private Partners/Sponsors", "Non-For-Porfit Ex-Serving Organisation", "Universities", "Aboriginal Community Controlled Health Services", "Access to Allied Psychological Services (ATAPS)", "Australian Defence Force Telephone Counselling, Self-help, and Online based Crisis Services", "Community-based Mental Health Services", "Emergency Service Connection", "General Practitioner", "Headspace", "Hospital Admitted Mental Health Care", "Hospital Non-admitted/Outpatient", "Legal and Complaints Service", "Mental Health Day Programs", "Open Arms", "Prescription Medication\u2020", "Residential Mental Health Care", "Telephone Counselling, Self-help, and Online Based Support Service/Program", "Veteran Clinical Mental Health Service", "Veteran Online Support Service/Program", "Veteran Psychosocial Support and Wellbeing Service/Program", "Primary care and private clinical ambulatory services ", "Psychosocial Support Services", "Jurisdictional clinical ambulatory mental health services", "Not Classified", "Bed-based Service", "Pharmaceutical / Medicines Supply Service"], "color": ["rgba(50,102,229,1.0)", "rgba(155,229,50,1.0)", "rgba(229,50,207,1.0)", "rgba(50,229,199,1.0)", "rgba(229,147,50,1.0)", "rgba(95,50,229,1.0)", "rgba(58,229,50,1.0)", "rgba(229,50,110,1.0)", "rgba(50,162,229,1.0)", "rgba(215,229,50,1.0)", "rgba(192,50,229,1.0)", "rgba(50,229,139,1.0)", "rgba(229,87,50,1.0)", "rgba(50,65,229,1.0)", "rgba(118,229,50,1.0)", "rgba(229,50,170,1.0)", "rgba(50,222,229,1.0)", "rgba(229,184,50,1.0)", "rgba(132,50,229,1.0)", "rgba(50,229,80,1.0)", "rgba(229,50,73,1.0)", "rgba(50,125,229,1.0)", "rgba(178,229,50,1.0)", "rgba(229,50,229,1.0)", "rgba(50,229,176,1.0)", "rgba(229,124,50,1.0)", "rgba(72,50,229,1.0)", "rgba(81,229,50,1.0)", "rgba(229,50,133,1.0)", "rgba(50,185,229,1.0)", "rgba(229,221,50,1.0)", "rgba(169,50,229,1.0)", "rgba(50,229,117,1.0)", "rgba(229,64,50,1.0)", "rgba(50,88,229,1.0)", "rgba(141,229,50,1.0)", "rgba(229,50,193,1.0)", "rgba(50,229,213,1.0)", "rgba(229,161,50,1.0)", "rgba(109,50,229,1.0)", "rgba(50,229,57,1.0)", "rgba(229,50,96,1.0)", "rgba(50,148,229,1.0)", "rgba(200,229,50,1.0)", "rgba(206,50,229,1.0)", "rgba(50,229,154,1.0)", "rgba(229,101,50,1.0)", "rgba(50,51,229,1.0)", "rgba(104,229,50,1.0)"], "x": [0.0, 0.0, 0.0, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.33, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "hovertemplate": "<b>%{label}</b><extra></extra>"}, "link": {"source": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 7, 7, 8, 8, 8, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 13, 13, 14, 15, 16, 16, 16, 16, 17, 18, 19, 20, 21, 21, 22, 22, 23, 23, 24, 25, 26, 26, 27, 28, 29, 30, 31, 31, 32, 32, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42], "target": [3, 4, 5, 6, 8, 11, 13, 14, 16, 17, 19, 20, 21, 24, 7, 12, 13, 15, 18, 21, 9, 10, 16, 22, 23, 24, 25, 25, 28, 30, 31, 32, 33, 26, 28, 31, 35, 39, 26, 28, 31, 26, 28, 27, 32, 40, 28, 39, 40, 41, 42, 28, 30, 32, 35, 37, 28, 30, 32, 36, 37, 41, 42, 28, 32, 33, 35, 38, 28, 35, 29, 29, 32, 33, 35, 37, 34, 34, 37, 39, 39, 41, 39, 42, 41, 42, 42, 43, 43, 44, 44, 45, 46, 43, 43, 44, 44, 45, 47, 45, 44, 45, 45, 48, 45, 44, 45, 44, 44], "value": [1, 7, 7, 5, 4, 7, 2, 1, 3, 1, 1, 1, 2, 1, 3, 5, 2, 1, 1, 2, 5, 5, 4, 2, 2, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 2, 1, 2, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 3, 3, 2, 10, 2, 3, 3, 3, 1, 1, 5, 4, 2, 7, 1, 4, 1, 6, 2, 5, 6], "color": ["rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(50,102,229,0.07)", "rgba(155,229,50,0.07)", "rgba(155,229,50,0.07)", "rgba(155,229,50,0.07)", "rgba(155,229,50,0.07)", "rgba(155,229,50,0.07)", "rgba(155,229,50,0.07)", "rgba(229,50,207,0.07)", "rgba(229,50,207,0.07)", "rgba(229,50,207,0.07)", "rgba(229,50,207,0.07)", "rgba(229,50,207,0.07)", "rgba(229,50,207,0.07)", "rgba(50,229,199,0.07)", "rgba(229,147,50,0.07)", "rgba(229,147,50,0.07)", "rgba(229,147,50,0.07)", "rgba(229,147,50,0.07)", "rgba(229,147,50,0.07)", "rgba(229,147,50,0.07)", "rgba(95,50,229,0.07)", "rgba(95,50,229,0.07)", "rgba(95,50,229,0.07)", "rgba(95,50,229,0.07)", "rgba(95,50,229,0.07)", "rgba(58,229,50,0.07)", "rgba(58,229,50,0.07)", "rgba(58,229,50,0.07)", "rgba(229,50,110,0.07)", "rgba(229,50,110,0.07)", "rgba(50,162,229,0.07)", "rgba(50,162,229,0.07)", "rgba(50,162,229,0.07)", "rgba(215,229,50,0.07)", "rgba(215,229,50,0.07)", "rgba(215,229,50,0.07)", "rgba(215,229,50,0.07)", "rgba(215,229,50,0.07)", "rgba(192,50,229,0.07)", "rgba(192,50,229,0.07)", "rgba(192,50,229,0.07)", "rgba(192,50,229,0.07)", "rgba(192,50,229,0.07)", "rgba(50,229,139,0.07)", "rgba(50,229,139,0.07)", "rgba(50,229,139,0.07)", "rgba(50,229,139,0.07)", "rgba(50,229,139,0.07)", "rgba(50,229,139,0.07)", "rgba(50,229,139,0.07)", "rgba(229,87,50,0.07)", "rgba(229,87,50,0.07)", "rgba(229,87,50,0.07)", "rgba(229,87,50,0.07)", "rgba(229,87,50,0.07)", "rgba(50,65,229,0.07)", "rgba(50,65,229,0.07)", "rgba(118,229,50,0.07)", "rgba(229,50,170,0.07)", "rgba(50,222,229,0.07)", "rgba(50,222,229,0.07)", "rgba(50,222,229,0.07)", "rgba(50,222,229,0.07)", "rgba(229,184,50,0.07)", "rgba(132,50,229,0.07)", "rgba(50,229,80,0.07)", "rgba(229,50,73,0.07)", "rgba(50,125,229,0.07)", "rgba(50,125,229,0.07)", "rgba(178,229,50,0.07)", "rgba(178,229,50,0.07)", "rgba(229,50,229,0.07)", "rgba(229,50,229,0.07)", "rgba(50,229,176,0.07)", "rgba(229,124,50,0.07)", "rgba(72,50,229,0.07)", "rgba(72,50,229,0.07)", "rgba(81,229,50,0.07)", "rgba(229,50,133,0.07)", "rgba(50,185,229,0.07)", "rgba(229,221,50,0.07)", "rgba(169,50,229,0.07)", "rgba(169,50,229,0.07)", "rgba(50,229,117,0.07)", "rgba(50,229,117,0.07)", "rgba(50,229,117,0.07)", "rgba(229,64,50,0.07)", "rgba(50,88,229,0.07)", "rgba(141,229,50,0.07)", "rgba(229,50,193,0.07)", "rgba(50,229,213,0.07)", "rgba(229,161,50,0.07)", "rgba(109,50,229,0.07)", "rgba(50,229,57,0.07)", "rgba(229,50,96,0.07)", "rgba(50,148,229,0.07)"], "line": {"color": "rgba(0,0,0,0.3)", "width": 0.25}, "hovertemplate": "<b>%{source.label}</b> \u2192 <b>%{target.label}</b><br>Pathway count: %{value}<extra></extra>"}}];
+    const layout = {"font": {"size": 12}, "height": 980, "hovermode": "closest", "title": {"text": "Service Funding & Provision Pathways \u2014 Updated dataset (16 Feb 2026)"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6"};
+    const config = {"responsive": true};
+    Plotly.newPlot("dec12e2c-3ed0-49c0-89fc-9723f6ae46c1", data, layout, config);
+  
+    // --- Pathway highlighting (hover + click) ---
+    const gd = document.getElementById("dec12e2c-3ed0-49c0-89fc-9723f6ae46c1");
+    const sankey = data[0];
+
+    const origNodeColors = (sankey.node.color || []).slice();
+    const origLinkColors = (sankey.link.color || []).slice();
+
+    const sources = sankey.link.source;
+    const targets = sankey.link.target;
+    const nNodes = (sankey.node.label || []).length;
+    const nLinks = sources.length;
+
+    const outEdges = Array.from({ length: nNodes }, () => []);
+    const inEdges  = Array.from({ length: nNodes }, () => []);
+
+    for (let i = 0; i < nLinks; i++) {
+      const s = sources[i];
+      const t = targets[i];
+      if (s != null) outEdges[s].push(i);
+      if (t != null) inEdges[t].push(i);
+    }
+
+    function clamp01(x) { return Math.max(0, Math.min(1, x)); }
+
+    function hexToRgb(hex) {
+      const h = hex.replace("#","").trim();
+      if (h.length === 3) {
+        const r = parseInt(h[0]+h[0], 16);
+        const g = parseInt(h[1]+h[1], 16);
+        const b = parseInt(h[2]+h[2], 16);
+        return [r,g,b];
+      }
+      if (h.length === 6) {
+        const r = parseInt(h.slice(0,2), 16);
+        const g = parseInt(h.slice(2,4), 16);
+        const b = parseInt(h.slice(4,6), 16);
+        return [r,g,b];
+      }
+      return null;
+    }
+
+    function setAlpha(color, alpha) {
+      const a = clamp01(alpha);
+      if (!color) return color;
+      const c = String(color).trim();
+
+      // rgba(...)
+      let m = c.match(/^rgba\((\s*\d+\s*),(\s*\d+\s*),(\s*\d+\s*),(\s*[0-9]*\.?[0-9]+\s*)\)$/i);
+      if (m) {
+        return `rgba(${m[1].trim()},${m[2].trim()},${m[3].trim()},${a})`;
+      }
+
+      // rgb(...)
+      m = c.match(/^rgb\((\s*\d+\s*),(\s*\d+\s*),(\s*\d+\s*)\)$/i);
+      if (m) {
+        return `rgba(${m[1].trim()},${m[2].trim()},${m[3].trim()},${a})`;
+      }
+
+      // hex
+      if (c[0] === "#") {
+        const rgb = hexToRgb(c);
+        if (rgb) return `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${a})`;
+      }
+
+      // fallback: leave as-is
+      return c;
+    }
+
+    function computePathways(nodeIndex) {
+      // Only highlight paths that *pass through* the selected node:
+      // - upstream (ancestors) via incoming links
+      // - downstream (descendants) via outgoing links
+      // This avoids pulling in sibling branches that merely share an ancestor/descendant.
+      const upNodes = new Set([nodeIndex]);
+      const upLinks = new Set();
+      let q = [nodeIndex];
+
+      while (q.length) {
+        const u = q.shift();
+        for (const li of inEdges[u]) {
+          upLinks.add(li);
+          const v = sources[li];
+          if (!upNodes.has(v)) {
+            upNodes.add(v);
+            q.push(v);
+          }
+        }
+      }
+
+      const downNodes = new Set([nodeIndex]);
+      const downLinks = new Set();
+      q = [nodeIndex];
+
+      while (q.length) {
+        const u = q.shift();
+        for (const li of outEdges[u]) {
+          downLinks.add(li);
+          const v = targets[li];
+          if (!downNodes.has(v)) {
+            downNodes.add(v);
+            q.push(v);
+          }
+        }
+      }
+
+      const nodes = new Set([...upNodes, ...downNodes]);
+      const links = new Set([...upLinks, ...downLinks]);
+      return { nodes, links };
+    }
+
+    function applyHighlight(nodeIndex) {
+      if (nodeIndex == null || nodeIndex < 0 || nodeIndex >= nNodes) {
+        Plotly.restyle(gd, {
+          "node.color": [origNodeColors],
+          "link.color": [origLinkColors]
+        });
+        return;
+      }
+
+      const { nodes, links } = computePathways(nodeIndex);
+
+      const nodeColors = origNodeColors.map((c, i) => nodes.has(i) ? setAlpha(c, 1.0) : setAlpha(c, 0.12));
+      const linkColors = origLinkColors.map((c, i) => links.has(i) ? setAlpha(c, 0.70) : setAlpha(c, 0.03));
+
+      Plotly.restyle(gd, {
+        "node.color": [nodeColors],
+        "link.color": [linkColors]
+      });
+    }
+
+    let lockedNode = null;
+
+    gd.on("plotly_hover", (ev) => {
+      const p = ev?.points?.[0];
+      if (!p) return;
+
+      // Ignore link hover; only highlight when hovering nodes
+      if (Object.prototype.hasOwnProperty.call(p, "source") || Object.prototype.hasOwnProperty.call(p, "target")) return;
+
+      const idx = p.pointNumber;
+      applyHighlight(idx);
+    });
+
+    gd.on("plotly_unhover", () => {
+      if (lockedNode != null) applyHighlight(lockedNode);
+      else applyHighlight(null);
+    });
+
+    gd.on("plotly_click", (ev) => {
+      const p = ev?.points?.[0];
+      if (!p) return;
+
+      // Ignore link clicks; only lock on node click
+      if (Object.prototype.hasOwnProperty.call(p, "source") || Object.prototype.hasOwnProperty.call(p, "target")) return;
+
+      const idx = p.pointNumber;
+      lockedNode = (lockedNode === idx) ? null : idx;
+      applyHighlight(lockedNode);
+    });
+
+    // Esc clears locked highlight
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        lockedNode = null;
+        applyHighlight(null);
+      }
+    });
+    // --- end pathway highlighting ---
+</script>
+</body>
+</html>
